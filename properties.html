@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Browse premium homes, apartments, villas and properties available from Premium Realty.">
+
+    <title>Properties | Premium Realty</title>
+
+    <link rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+<body>
+  <!-- PAGE LOADER -->
+<div class="page-loader" id="pageLoader">
+    <div class="loader-content">
+        <div class="loader-logo">
+            PREMIUM<span>REALTY</span>
+        </div>
+
+        <div class="loader-line">
+            <div class="loader-progress"></div>
+        </div>
+
+        <p>Loading...</p>
+    </div>
+</div>
+
+    <!-- ==========================
+         NAVIGATION
+    =========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            PREMIUM<span>REALTY</span>
+        </div>
+
+        <div class="menu-toggle">
+            ☰
+        </div>
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="properties.html">
+                Properties
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+            <a href="index.html#services">
+                Services
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </nav>
+
+        <a href="contact.html"
+            class="nav-button">
+            Get Started
+        </a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+    ☀
+      </button>
+
+    </header>
+
+
+    <!-- ==========================
+         PAGE HERO
+    =========================== -->
+
+    <section class="page-hero">
+
+        <div>
+
+            <p class="hero-small">
+                PREMIUM PROPERTY COLLECTION
+            </p>
+
+            <h1>
+                Discover Your
+                <span>Perfect Property.</span>
+            </h1>
+
+            <p>
+                Explore our collection of carefully
+                selected homes and investment properties.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================
+         PROPERTY SEARCH
+    =========================== -->
+
+    <section class="property-search">
+
+        <div class="search-box">
+
+            <div class="search-item">
+
+                <label>
+                    Location
+                </label>
+
+                <input
+                    type="text"
+                    id="locationFilter"
+                    placeholder="e.g. Lagos">
+
+            </div>
+
+
+            <div class="search-item">
+
+                <label>
+                    Property Type
+                </label>
+
+                <select id="typeFilter">
+
+                    <option value="all">
+                        All Types
+                    </option>
+
+                    <option value="house">
+                        House
+                    </option>
+
+                    <option value="apartment">
+                        Apartment
+                    </option>
+
+                    <option value="villa">
+                        Villa
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="search-item">
+
+                <label>
+                    Bedrooms
+                </label>
+
+                <select id="bedroomFilter">
+
+                    <option value="all">
+                        Any
+                    </option>
+
+                    <option value="2">
+                        2+
+                    </option>
+
+                    <option value="3">
+                        3+
+                    </option>
+
+                    <option value="4">
+                        4+
+                    </option>
+
+                    <option value="5">
+                        5+
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button
+                class="search-button"
+                id="filterButton">
+
+                Search
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================
+         PROPERTIES
+    =========================== -->
+
+    <section class="properties">
+
+        <div class="section-heading">
+
+            <p>
+                OUR LISTINGS
+            </p>
+
+            <h2>
+                Available Properties
+            </h2>
+
+            <span id="propertyCount">
+                Showing 6 properties
+            </span>
+
+        </div>
+
+
+        <div class="property-grid"
+            id="propertyGrid">
+
+
+            <!-- PROPERTY 1 -->
+
+            <article
+                class="property-card"
+                data-location="Lagos"
+                data-type="villa"
+                data-bedrooms="4">
+
+                <div class="property-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80"
+                        alt="Luxury villa in Lagos"
+                        loading="lazy">
+
+                    <span class="property-status">
+                        FOR SALE
+                    </span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <p class="property-location">
+                        Lekki, Lagos
+                    </p>
+
+                    <h3>
+                        Modern Luxury Villa
+                    </h3>
+
+                    <div class="property-details">
+
+                        <span>4 Beds</span>
+                        <span>4 Baths</span>
+                        <span>450 m²</span>
+
+                    </div>
+
+                    <div class="property-bottom">
+
+                        <strong>
+                            $250,000,000
+                        </strong>
+
+                        <a href="property-details.html?id=lekki-villa">View Property</a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROPERTY 2 -->
+
+            <article
+                class="property-card"
+                data-location="Lagos"
+                data-type="apartment"
+                data-bedrooms="3">
+
+                <div class="property-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80"
+                        alt="Luxury apartment in Lagos"
+                        loading="lazy">
+
+                    <span class="property-status">
+                        FOR SALE
+                    </span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <p class="property-location">
+                        Ikoyi, Lagos
+                    </p>
+
+                    <h3>
+                        Luxury City Apartment
+                    </h3>
+
+                    <div class="property-details">
+
+                        <span>3 Beds</span>
+                        <span>3 Baths</span>
+                        <span>280 m²</span>
+
+                    </div>
+
+                    <div class="property-bottom">
+
+                        <strong>
+                            ₦180,000,000
+                        </strong>
+
+                        <a href="property-details.html?id=ikoyi-apartment">View Property</a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROPERTY 3 -->
+
+            <article
+                class="property-card"
+                data-location="Abuja"
+                data-type="house"
+                data-bedrooms="5">
+
+                <div class="property-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=80"
+                        alt="Contemporary house in Abuja"
+                        loading="lazy">
+
+                    <span class="property-status">
+                        FOR SALE
+                    </span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <p class="property-location">
+                        Maitama, Abuja
+                    </p>
+
+                    <h3>
+                        Contemporary Residence
+                    </h3>
+
+                    <div class="property-details">
+
+                        <span>5 Beds</span>
+                        <span>5 Baths</span>
+                        <span>600 m²</span>
+
+                    </div>
+
+                    <div class="property-bottom">
+
+                        <strong>
+                            $320,000,000
+                        </strong>
+
+                        <a href="property-details.html?id=maitama-house">View Property</a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROPERTY 4 -->
+
+            <article
+                class="property-card"
+                data-location="Ibadan"
+                data-type="house"
+                data-bedrooms="4">
+
+                <div class="property-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1000&q=80"
+                        alt="Modern home in Ibadan"
+                        loading="lazy">
+
+                    <span class="property-status">
+                        FOR SALE
+                    </span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <p class="property-location">
+                        Jericho, Ibadan
+                    </p>
+
+                    <h3>
+                        Elegant Family Home
+                    </h3>
+
+                    <div class="property-details">
+
+                        <span>4 Beds</span>
+                        <span>4 Baths</span>
+                        <span>420 m²</span>
+
+                    </div>
+
+                    <div class="property-bottom">
+
+                        <strong>
+                            $95,000,000
+                        </strong>
+
+                        <a href="property-details.html?id=jericho-house">View Property</a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROPERTY 5 -->
+
+            <article
+                class="property-card"
+                data-location="Lagos"
+                data-type="villa"
+                data-bedrooms="5">
+
+                <div class="property-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80"
+                        alt="Luxury villa"
+                        loading="lazy">
+
+                    <span class="property-status">
+                        FOR RENT
+                    </span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <p class="property-location">
+                        Banana Island, Lagos
+                    </p>
+
+                    <h3>
+                        Grand Waterfront Villa
+                    </h3>
+
+                    <div class="property-details">
+
+                        <span>5 Beds</span>
+                        <span>5 Baths</span>
+                        <span>600 m²</span>
+
+                    </div>
+
+                    <div class="property-bottom">
+
+                        <strong>
+                            $15,000,000/year
+                        </strong>
+
+                        <a href="property-details.html?id=banana-island-villa">View Property</a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROPERTY 6 -->
+
+            <article
+                class="property-card"
+                data-location="Abuja"
+                data-type="apartment"
+                data-bedrooms="2">
+
+                <div class="property-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=80"
+                        alt="Modern apartment"
+                        loading="lazy">
+
+                    <span class="property-status">
+                        FOR RENT
+                    </span>
+
+                </div>
+
+                <div class="property-info">
+
+                    <p class="property-location">
+                        Wuse 2, Abuja
+                    </p>
+
+                    <h3>
+                        Modern City Apartment
+                    </h3>
+
+                    <div class="property-details">
+
+                        <span>2 Beds</span>
+                        <span>2 Baths</span>
+                        <span>180 m²</span>
+
+                    </div>
+
+                    <div class="property-bottom">
+
+                        <strong>
+                            $6,500,000/year
+                        </strong>
+
+                        <a href="property-details.html?id=wuse-2-apartment">View Property</a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================
+         FOOTER
+    =========================== -->
+
+    <footer class="footer">
+
+    <div class="footer-grid">
+
+        <!-- COMPANY -->
+        <div class="footer-column">
+
+            <h3>
+                PREMIUM<span>REALTY</span>
+            </h3>
+
+            <p>
+                Luxury properties. Trusted service.
+                Exceptional results.
+            </p>
+
+        </div>
+
+
+        <!-- QUICK LINKS -->
+        <div class="footer-column">
+
+            <h4>Quick Links</h4>
+
+            <a href="index.html">Home</a>
+            <a href="properties.html">Properties</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="agents.html">Our Agents</a>
+
+        </div>
+
+
+        <!-- SERVICES -->
+        <div class="footer-column">
+
+            <h4>Services</h4>
+
+            <a href="services.html">Property Sales</a>
+            <a href="services.html">Property Rentals</a>
+            <a href="services.html">Property Management</a>
+            <a href="rental-application.html">
+                Rental Application
+            </a>
+
+        </div>
+
+
+        <!-- INFORMATION -->
+        <div class="footer-column">
+
+            <h4>Information</h4>
+
+            <a href="contact.html">Contact Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Premium Realty.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            Designed with excellence.
+        </p>
+
+    </div>
+
+</footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

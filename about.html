@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Learn more about Premium Realty, our mission, values and commitment to exceptional real estate service.">
+
+    <meta name="keywords"
+          content="Premium Realty, real estate, property, Lagos, Abuja, Nigeria">
+
+    <title>About Us | Premium Realty</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        /* ABOUT HERO */
+
+        .about-hero {
+            min-height: 65vh;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,.68),
+                    rgba(0,0,0,.68)
+                ),
+                url("https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1800&q=85");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+
+            padding: 140px 25px 80px;
+
+            color: white;
+        }
+
+        .about-hero-content {
+            max-width: 850px;
+            margin: auto;
+            width: 100%;
+        }
+
+        .about-hero h1 {
+            font-size: clamp(45px, 8vw, 75px);
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+
+        .about-hero h1 span {
+            color: var(--gold);
+        }
+
+        .about-hero p {
+            max-width: 650px;
+            color: #ddd;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+
+        /* ABOUT INTRO */
+
+        .about-intro {
+            padding: 90px 20px;
+            background: white;
+        }
+
+        .about-intro-container {
+            max-width: 1150px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            gap: 60px;
+
+            align-items: center;
+        }
+
+        .about-intro-image img {
+            width: 100%;
+            height: 500px;
+
+            object-fit: cover;
+
+            border-radius: 8px;
+        }
+
+        .about-intro-text h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .about-intro-text h2 span {
+            color: var(--gold);
+        }
+
+        .about-intro-text p {
+            color: #666;
+            line-height: 1.9;
+            margin-bottom: 18px;
+        }
+
+
+        /* MISSION */
+
+        .mission-section {
+            padding: 90px 20px;
+            background: var(--light);
+        }
+
+        .mission-container {
+            max-width: 1150px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .mission-card {
+            background: white;
+            padding: 40px 30px;
+
+            border-radius: 8px;
+
+            transition: .3s;
+        }
+
+        .mission-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,.08);
+        }
+
+        .mission-icon {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .mission-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .mission-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+
+        /* STATISTICS */
+
+        .about-stats {
+            padding: 70px 20px;
+            background: #111;
+            color: white;
+        }
+
+        .stats-container {
+            max-width: 1100px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 30px;
+
+            text-align: center;
+        }
+
+        .stat h3 {
+            color: var(--gold);
+            font-size: 42px;
+            margin-bottom: 8px;
+        }
+
+        .stat p {
+            color: #ccc;
+        }
+
+
+        /* CTA */
+
+        .about-cta {
+            padding: 90px 20px;
+            text-align: center;
+            background: white;
+        }
+
+        .about-cta h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .about-cta p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            color: #666;
+            line-height: 1.7;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 800px) {
+
+            .about-hero {
+                min-height: 70vh;
+            }
+
+            .about-intro-container {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .about-intro-image img {
+                height: 350px;
+            }
+
+            .about-intro-text h2 {
+                font-size: 34px;
+            }
+
+            .mission-container {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stat h3 {
+                font-size: 32px;
+            }
+
+            .about-cta h2 {
+                font-size: 32px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+  <!-- PAGE LOADER -->
+<div class="page-loader" id="pageLoader">
+    <div class="loader-content">
+        <div class="loader-logo">
+            PREMIUM<span>REALTY</span>
+        </div>
+
+        <div class="loader-line">
+            <div class="loader-progress"></div>
+        </div>
+
+        <p>Loading...</p>
+    </div>
+</div>
+
+
+    <!-- NAVIGATION -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            PREMIUM<span>REALTY</span>
+        </div>
+
+        <div class="menu-toggle">
+            ☰
+        </div>
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="properties.html">
+                Properties
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="index.html#services">
+                Services
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </nav>
+
+        <a href="index.html#contact"
+           class="nav-button">
+
+            Get Started
+
+        </a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+    ☀
+</button>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="about-hero">
+
+        <div class="about-hero-content">
+
+            <h1>
+                About <span>Premium Realty</span>
+            </h1>
+
+            <p>
+                We connect people with exceptional properties
+                and provide a professional, transparent and
+                personalized real-estate experience.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+
+    <section class="about-intro">
+
+        <div class="about-intro-container">
+
+
+            <div class="about-intro-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85"
+                    alt="Luxury modern interior"
+                    loading="lazy">
+
+            </div>
+
+
+            <div class="about-intro-text">
+
+                <h2>
+                    Real Estate With
+                    <span>Purpose</span>
+                </h2>
+
+                <p>
+                    At Premium Realty, we believe finding a
+                    property should be more than a transaction.
+                    It should be a confident step toward the
+                    future you want to build.
+                </p>
+
+                <p>
+                    Our approach combines local market knowledge,
+                    modern technology and personalized service
+                    to help buyers, sellers, landlords and tenants
+                    navigate the property market.
+                </p>
+
+                <p>
+                    From the first conversation to the final
+                    paperwork, our goal is to make the experience
+                    clear, professional and convenient.
+                </p>
+
+                <a href="properties.html"
+                   class="btn btn-gold">
+
+                    Explore Properties
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MISSION / VALUES -->
+
+    <section class="mission-section">
+
+        <div class="mission-container">
+
+
+            <div class="mission-card">
+
+                <div class="mission-icon">
+                    🎯
+                </div>
+
+                <h3>
+                    Our Mission
+                </h3>
+
+                <p>
+                    To make property transactions simpler,
+                    clearer and more accessible while delivering
+                    exceptional service to every client.
+                </p>
+
+            </div>
+
+
+            <div class="mission-card">
+
+                <div class="mission-icon">
+                    🤝
+                </div>
+
+                <h3>
+                    Our Values
+                </h3>
+
+                <p>
+                    We focus on integrity, transparency,
+                    professionalism and long-term relationships
+                    with our clients.
+                </p>
+
+            </div>
+
+
+            <div class="mission-card">
+
+                <div class="mission-icon">
+                    ✨
+                </div>
+
+                <h3>
+                    Our Vision
+                </h3>
+
+                <p>
+                    To create a trusted modern real-estate
+                    experience where people can confidently
+                    discover places they are proud to call home.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- STATISTICS -->
+
+    <section class="about-stats">
+
+        <div class="stats-container">
+
+
+            <div class="stat">
+
+                <h3>
+                    150+
+                </h3>
+
+                <p>
+                    Properties
+                </p>
+
+            </div>
+
+
+            <div class="stat">
+
+                <h3>
+                    100+
+                </h3>
+
+                <p>
+                    Happy Clients
+                </p>
+
+            </div>
+
+
+            <div class="stat">
+
+                <h3>
+                    8+
+                </h3>
+
+                <p>
+                    Years Experience
+                </p>
+
+            </div>
+
+
+            <div class="stat">
+
+                <h3>
+                    5
+                </h3>
+
+                <p>
+                    Major Locations
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="about-cta">
+
+        <h2>
+            Ready to Find Your
+            <span style="color: var(--gold);">
+                Next Property?
+            </span>
+        </h2>
+
+        <p>
+            Explore our available properties or speak
+            directly with our team about your requirements.
+        </p>
+
+        <a href="properties.html"
+           class="btn btn-gold">
+
+            View Properties
+
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+    <div class="footer-grid">
+
+        <!-- COMPANY -->
+        <div class="footer-column">
+
+            <h3>
+                PREMIUM<span>REALTY</span>
+            </h3>
+
+            <p>
+                Luxury properties. Trusted service.
+                Exceptional results.
+            </p>
+
+        </div>
+
+
+        <!-- QUICK LINKS -->
+        <div class="footer-column">
+
+            <h4>Quick Links</h4>
+
+            <a href="index.html">Home</a>
+            <a href="properties.html">Properties</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="agents.html">Our Agents</a>
+
+        </div>
+
+
+        <!-- SERVICES -->
+        <div class="footer-column">
+
+            <h4>Services</h4>
+
+            <a href="services.html">Property Sales</a>
+            <a href="services.html">Property Rentals</a>
+            <a href="services.html">Property Management</a>
+            <a href="rental-application.html">
+                Rental Application
+            </a>
+
+        </div>
+
+
+        <!-- INFORMATION -->
+        <div class="footer-column">
+
+            <h4>Information</h4>
+
+            <a href="contact.html">Contact Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Premium Realty.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            Designed with excellence.
+        </p>
+
+    </div>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

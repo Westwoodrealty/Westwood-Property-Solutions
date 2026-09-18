@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="View premium property details, features, pricing and contact information.">
+
+    <title>Property Details | Premium Realty</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .details-page {
+            padding: 120px 20px 80px;
+            background: #f5f4f0;
+        }
+
+        .details-container {
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        .property-gallery {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .property-gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .main-photo {
+            height: 500px;
+        }
+
+        .small-photos {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .small-photos img {
+            height: 242px;
+        }
+
+        .details-content {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+        }
+
+        .details-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .details-top h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .location {
+            color: #777;
+            font-size: 17px;
+        }
+
+        .price {
+            color: #d4af37;
+            font-size: 25px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .property-features {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin: 35px 0;
+        }
+
+        .feature-box {
+            background: #f5f4f0;
+            padding: 22px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .feature-box strong {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .feature-box span {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .details-section {
+            margin-top: 40px;
+        }
+
+        .details-section h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .details-section p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .contact-agent {
+            margin-top: 40px;
+            padding: 30px;
+            background: #111;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .contact-agent h2 {
+            margin-bottom: 10px;
+        }
+
+        .contact-agent p {
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 800px) {
+
+            .property-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .main-photo {
+                height: 350px;
+            }
+
+            .small-photos {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: none;
+            }
+
+            .small-photos img {
+                height: 180px;
+            }
+
+            .details-content {
+                padding: 25px;
+            }
+
+            .details-top {
+                flex-direction: column;
+            }
+
+            .details-top h1 {
+                font-size: 32px;
+            }
+
+            .property-features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .price {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            PREMIUM<span>REALTY</span>
+        </div>
+
+        <div class="menu-toggle">
+            ☰
+        </div>
+
+        <nav class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="properties.html">Properties</a>
+
+            <a href="index.html#about">About</a>
+
+            <a href="index.html#services">Services</a>
+
+            <a href="index.html#contact">Contact</a>
+
+        </nav>
+
+        <a href="index.html#contact"
+           class="nav-button">
+            Get Started
+        </a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+    ☀
+</button>
+
+    </header>
+
+
+    <!-- PROPERTY DETAILS -->
+
+    <main class="details-page">
+
+        <div class="details-container">
+
+            <!-- GALLERY -->
+
+            <div class="property-gallery">
+
+                <img
+                    class="main-photo"
+                    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=85"
+                    alt="Luxury property">
+
+                <div class="small-photos">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85"
+                        alt="Luxury property interior">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85"
+                        alt="Luxury property room">
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTENT -->
+
+            <div class="details-content">
+
+                <div class="details-top">
+
+                    <div>
+
+                        <h1>
+                            Luxury Villa in Lekki
+                        </h1>
+
+                        <p class="location">
+                            📍 Lekki, Lagos, Nigeria
+                        </p>
+
+                    </div>
+
+                    <div class="price">
+                        ₦250,000,000
+                    </div>
+
+                </div>
+
+
+                <!-- FEATURES -->
+
+                <div class="property-features">
+
+                    <div class="feature-box">
+                        <strong>4</strong>
+                        <span>Bedrooms</span>
+                    </div>
+
+                    <div class="feature-box">
+                        <strong>5</strong>
+                        <span>Bathrooms</span>
+                    </div>
+
+                    <div class="feature-box">
+                        <strong>450</strong>
+                        <span>m²</span>
+                    </div>
+
+                    <div class="feature-box">
+                        <strong>2</strong>
+                        <span>Parking</span>
+                    </div>
+
+                </div>
+
+
+                <!-- DESCRIPTION -->
+
+                <div class="details-section">
+
+                    <h2>
+                        Property Description
+                    </h2>
+
+                    <p>
+                        Discover refined modern living in this beautiful
+                        luxury villa located in Lekki, Lagos. The property
+                        offers spacious interiors, elegant finishes and
+                        carefully designed living spaces suitable for
+                        comfortable family living and entertaining guests.
+                    </p>
+
+                    <p>
+                        The home features generous bedrooms, modern
+                        bathrooms, a stylish kitchen, spacious living areas
+                        and secure parking.
+                    </p>
+
+                </div>
+
+
+                <!-- CONTACT -->
+
+                <div class="contact-agent">
+
+                    <h2>
+                        Interested in this property?
+                    </h2>
+
+                    <p>
+                        Contact our property team to schedule a viewing
+                        or request more information.
+                    </p>
+
+                    <a href="index.html#contact"
+                       class="btn btn-gold">
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+    <div class="footer-grid">
+
+        <!-- COMPANY -->
+        <div class="footer-column">
+
+            <h3>
+                PREMIUM<span>REALTY</span>
+            </h3>
+
+            <p>
+                Luxury properties. Trusted service.
+                Exceptional results.
+            </p>
+
+        </div>
+
+
+        <!-- QUICK LINKS -->
+        <div class="footer-column">
+
+            <h4>Quick Links</h4>
+
+            <a href="index.html">Home</a>
+            <a href="properties.html">Properties</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="agents.html">Our Agents</a>
+
+        </div>
+
+
+        <!-- SERVICES -->
+        <div class="footer-column">
+
+            <h4>Services</h4>
+
+            <a href="services.html">Property Sales</a>
+            <a href="services.html">Property Rentals</a>
+            <a href="services.html">Property Management</a>
+            <a href="rental-application.html">
+                Rental Application
+            </a>
+
+        </div>
+
+
+        <!-- INFORMATION -->
+        <div class="footer-column">
+
+            <h4>Information</h4>
+
+            <a href="contact.html">Contact Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Premium Realty.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            Designed with excellence.
+        </p>
+
+    </div>
+
+</footer>
+
+
+    <script src="js/main.js"></script>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const properties = {
+
+        "lekki-villa": {
+            name: "Luxury Villa in Lekki",
+            location: "Lekki, Lagos, Nigeria",
+            price: "$250,000,000",
+            bedrooms: "4",
+            bathrooms: "5",
+            size: "450",
+            parking: "2",
+            description:
+                "Discover refined modern living in this beautiful luxury villa located in Lekki, Lagos. The property offers spacious interiors, elegant finishes and carefully designed living spaces suitable for comfortable family living and entertaining guests.",
+            image:
+                "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=85"
+        },
+
+        "ikoyi-apartment": {
+            name: "Luxury Apartment in Ikoyi",
+            location: "Ikoyi, Lagos, Nigeria",
+            price: "$180,000,000",
+            bedrooms: "3",
+            bathrooms: "3",
+            size: "280",
+            parking: "2",
+            description:
+                "Experience sophisticated city living in this elegant apartment in Ikoyi. Designed with modern finishes, spacious rooms and premium amenities, this property offers comfort and convenience in one of Lagos's most sought-after areas.",
+            image:
+                "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85"
+        },
+
+        "maitama-house": {
+            name: "Executive House in Maitama",
+            location: "Maitama, Abuja, Nigeria",
+            price: "$320,000,000",
+            bedrooms: "5",
+            bathrooms: "5",
+            size: "520",
+            parking: "3",
+            description:
+                "This impressive residence in Maitama combines generous living spaces with elegant modern design. It provides a comfortable setting for families looking for privacy, space and premium residential living.",
+            image:
+                "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=85"
+        },
+
+        "jericho-house": {
+            name: "Modern Family House in Jericho",
+            location: "Jericho, Ibadan, Nigeria",
+            price: "$95,000,000",
+            bedrooms: "4",
+            bathrooms: "4",
+            size: "380",
+            parking: "2",
+            description:
+                "A beautifully designed family residence in Jericho, Ibadan. The property provides spacious accommodation, modern finishes and a peaceful residential environment.",
+            image:
+                "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1400&q=85"
+        },
+
+        "banana-island-villa": {
+            name: "Premium Villa in Banana Island",
+            location: "Banana Island, Lagos, Nigeria",
+            price: "$15,000,000 / year",
+            bedrooms: "5",
+            bathrooms: "6",
+            size: "600",
+            parking: "3",
+            description:
+                "Enjoy premium residential living in this spacious villa on Banana Island. With elegant interiors, generous bedrooms and excellent entertaining spaces, this home is designed for luxury living.",
+            image:
+                "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85"
+        },
+
+        "wuse-2-apartment": {
+            name: "Modern Apartment in Wuse 2",
+            location: "Wuse 2, Abuja, Nigeria",
+            price: "$6,500,000 / year",
+            bedrooms: "2",
+            bathrooms: "2",
+            size: "190",
+            parking: "1",
+            description:
+                "A stylish modern apartment located in Wuse 2, Abuja. The property offers comfortable living spaces, contemporary finishes and convenient access to important areas of the city.",
+            image:
+                "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=85"
+        }
+
+    };
+
+
+    const params = new URLSearchParams(window.location.search);
+    const propertyId = params.get("id");
+
+    const property = properties[propertyId];
+
+
+    if (property) {
+
+        document.querySelector(".details-top h1").textContent =
+            property.name;
+
+        document.querySelector(".location").textContent =
+            "📍 " + property.location;
+
+        document.querySelector(".price").textContent =
+            property.price;
+
+        const features =
+            document.querySelectorAll(".feature-box strong");
+
+        features[0].textContent = property.bedrooms;
+        features[1].textContent = property.bathrooms;
+        features[2].textContent = property.size;
+        features[3].textContent = property.parking;
+
+        const description =
+            document.querySelector(".details-section");
+
+        description.innerHTML = `
+            <h2>Property Description</h2>
+
+            <p>${property.description}</p>
+
+            <p>
+                Contact our property team to schedule a viewing
+                or request more information about this property.
+            </p>
+        `;
+
+        const mainImage =
+            document.querySelector(".main-photo");
+
+        mainImage.src = property.image;
+        mainImage.alt = property.name;
+
+        document.title =
+            property.name + " | Premium Realty";
+
+    }
+
+});
+              </script>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const mainPhoto = document.querySelector(".main-photo");
+    const thumbnails = document.querySelectorAll(".gallery-thumb");
+
+    thumbnails.forEach(function (thumbnail) {
+
+        thumbnail.addEventListener("click", function () {
+
+            const temporaryImage = mainPhoto.src;
+
+            mainPhoto.src = thumbnail.src;
+
+            thumbnail.src = temporaryImage;
+
+        });
+
+    });
+
+});
+  </script>
+
+</body>
+</html>
